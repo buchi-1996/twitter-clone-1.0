@@ -1,0 +1,61 @@
+.widgets{
+    height: 100vh;
+    padding: 0 20px
+}
+
+
+
+.widgets__inner{
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.widgets__searchBar{
+    border: 1px solid var(--twitter-background);
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 30px;
+    background: #ebeef0;
+    box-sizing: border-box;
+}
+
+.widgets__header{
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 99;
+}
+
+
+.widgets__searchBarInput{
+    flex: 1;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    padding: 0 10px 0 0;
+    outline: none;
+    background: transparent;
+}
+
+.widgets__twitterEmbed > h3{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.widgets__searchBar > .MuiSvgIcon-root{
+    padding: 0 10px;
+    text-align: center !important;
+    color: #555;
+}
+
+
+
+@media screen and (max-width: 799px){
+    .widgets{
+        display: none;
+    }
+}

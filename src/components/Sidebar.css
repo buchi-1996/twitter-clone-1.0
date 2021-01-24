@@ -1,0 +1,73 @@
+.sidebar{
+    position: sticky;
+    top: 0;
+    padding: 2px 0 5px 10px;
+}
+
+.sidebar__twitterIcon{
+    color: var(--twitter-color);
+    padding: 10px;
+    font-size: 30px !important;
+}
+
+.sidebar__twitterIcon:hover{
+    background-color: #e8f5fe;
+    border-radius: 50%;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+.sidebar__tweetBtn{
+    padding: 10px !important;
+    background: var(--twitter-color) !important;
+    border-radius: 30px !important;
+    text-transform: capitalize !important;
+    width: 85% !important;
+    margin: 10px 0 !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    box-sizing: border-box !important;
+}
+
+.sidebar__user{
+    display: flex;
+    margin: 50px 0 0;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+
+.sidebar__user:hover{
+    background: #e8f5fe;
+    border-radius: 30px;
+}
+
+.sidebar__userDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.sidebar__userNames{
+    margin-left: 10px;
+}
+
+.sidebar__userNames > h4{
+    font-weight: bold;
+}
+
+.sidebar__userNames > span{
+    color: #aaa;
+}
+
+
+@media screen and (max-width: 1000px){
+    .sidebar__userNames, .sidebar__moreIcon{
+        display: none !important;
+    }
+}
+

@@ -1,0 +1,103 @@
+.post{
+    padding: 5px 15px 0;
+    display: flex;
+    border-top: 1px solid var(--twitter-background);
+    cursor: pointer;
+}
+
+.post:hover{
+    background: #f7f7f7;
+}
+.post__verifyIcon{
+    color: var(--twitter-color);
+    font-size: 20px !important;
+}
+
+.postMoreIcon{
+    color: gray;
+    padding: 5px;
+}
+
+.postMoreIcon:hover{
+    background: #d5ecfd;
+    border-radius: 50%;
+}
+
+.post__avatar{
+    padding: 5px;
+    margin-top: 10px !important;
+}
+
+.post__details{
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.post__detailsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post__detailsUser{
+    display: flex;
+    align-items: center;
+}
+
+.post__detailsUser h4{
+    font-weight: bold;
+}
+
+.post__main p{
+    font-size: 1rem;
+}
+
+.post__detailsUser span{
+    margin-left: 5px;
+    color: gray;
+}
+
+.post__image{
+    margin: 10px 0 0;
+}
+
+.post__image img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.post__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 10px;
+}
+
+.post__buttons > .MuiSvgIcon-root{
+    padding: 5px;
+    font-size: 1rem !important;
+    font-weight: lighter !important;
+    color: gray !important;
+}
+
+.post__buttons > .MuiSvgIcon-root:hover{
+    border-radius: 50%;
+    background-color:#d5ecfd;
+}
+
+.post__buttons > .chatBtn:hover{
+    color: var(--twitter-color) !important;
+}
+.post__buttons > .retweetBtn:hover{
+    color: green !important;
+}
+.post__buttons > .likeBtn:hover{
+    color: #e0245e !important;
+}
+.post__buttons > .publishBtn:hover{
+    color: var(--twitter-color) !important;
+}
+

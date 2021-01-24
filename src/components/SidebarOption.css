@@ -1,0 +1,55 @@
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.sidebarOptionActive{
+    color: var(--twitter-color) !important;
+}
+
+.sidebarOption > .sidebarOption__inner{
+    display: flex;
+    align-items: center;
+    flex-grow: .2;
+    color: #393b3d;
+    padding: 10px;
+}
+
+.sidebarOption__inner h3{
+    margin-left: 10px;
+}
+
+
+.sidebarOption:hover .sidebarOption__inner{
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+
+.sidebarOption > .sidebarOption__inner > .MuiSvgIcon-root{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1000px){
+
+    .sidebarOption__inner h3{
+        display: none;
+    }
+
+    .sidebarOption__inner h3{
+        margin-left: 0;
+    }
+
+    .sidebarOption__inner{
+        border-radius: 50%;
+        flex-grow: 0 !important;
+    }
+
+   
+}
+
+
+

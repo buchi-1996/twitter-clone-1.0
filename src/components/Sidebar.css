@@ -2,6 +2,8 @@
     position: sticky;
     top: 0;
     padding: 2px 0 5px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar__twitterIcon{
@@ -28,11 +30,15 @@
     box-sizing: border-box !important;
 }
 
+.sidebar__tweetBtnIcon{
+    background: var(--twitter-color) !important;
+
+}
+
 .sidebar__user{
     display: flex;
     margin: 50px 0 0;
     justify-content: space-between;
-    width: 90%;
     align-items: center;
     box-sizing: border-box;
     border-radius: 50%;
@@ -65,9 +71,25 @@
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1300px){
     .sidebar__userNames, .sidebar__moreIcon{
         display: none !important;
+    }
+
+    .sidebar__userNames{
+        margin-left: 0;
+    }
+
+
+    .sidebar__userDetails{
+        border-radius: 50%;
+        text-align: center;
+        display: block;
+    }
+
+    .sidebar{
+        align-items: flex-end;
+        padding: 0 20px 0 0;
     }
 }
 

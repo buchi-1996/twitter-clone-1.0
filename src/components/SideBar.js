@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import TwitterIcon from '@material-ui/icons/Twitter';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
@@ -8,12 +8,23 @@ import BookmarkBorderOutlinedIcon from '@material-ui/icons/BookmarkBorderOutline
 import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
 import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined';
 import MoreHorizOutlinedIcon from '@material-ui/icons/MoreHorizOutlined';
+import EditIcon from '@material-ui/icons/Edit';
 import './Sidebar.css';
 import SidebarOption from './SidebarOption';
-import { Avatar, Button } from '@material-ui/core';
+import { Avatar, Button, Fab } from '@material-ui/core';
 
 
 const SideBar = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+
+   useEffect(() => {
+      window.addEventListener('resize', () => {
+          console.log(window.innerWidth);
+          setWidth(window.innerWidth);
+      })
+       
+   }, []);
+
     return (
         <div className="sidebar">
             <TwitterIcon className="sidebar__twitterIcon" />
@@ -27,9 +38,13 @@ const SideBar = () => {
             <SidebarOption Icon={PermIdentityOutlinedIcon} text="Profile" />
             <SidebarOption Icon={MoreHorizOutlinedIcon} text="More" />
 
-            <Button className="sidebar__tweetBtn" variant="contained" color="primary">
-                Tweet
-            </Button>
+
+            {width <= 1300? <Fab color="primary" className="sidebar__tweetBtnIcon" aria-label="edit">
+        <EditIcon />
+      </Fab> : <Button className="sidebar__tweetBtn" variant="contained" color="primary">
+            Tweet
+            </Button>}
+            
             <div className="sidebar__user">
                 <div className="sidebar__userDetails">
                  <Avatar alt="Remy Sharp" src="">B</Avatar>

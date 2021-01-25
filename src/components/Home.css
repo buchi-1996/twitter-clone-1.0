@@ -1,3 +1,24 @@
 .home{
-    height: auto;
+    height: 100vh;
+
 }
+
+.home__gridContainer{
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidebar main main widgets";
+}
+
+.home__sidebar{
+    grid-area: sidebar;
+}
+
+.home__feed{
+    grid-area: main;
+}
+
+.home__widgets{
+    grid-area: widgets;
+}
+

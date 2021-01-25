@@ -33,7 +33,7 @@
     font-size: 30px;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1300px){
 
     .sidebarOption__inner h3{
         display: none;

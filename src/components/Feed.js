@@ -25,7 +25,7 @@ const Feed = () => {
         db.collection('posts').add({
             userName: "Buchi_Nigeria",
             text: tweetInput,
-            image: (window.URL || window.webkitURL).createObjectURL(image),
+            image: image ? (window.URL || window.webkitURL).createObjectURL(image) : null,
             twitterHandle: '@godwinco96',
             verified: true
         })

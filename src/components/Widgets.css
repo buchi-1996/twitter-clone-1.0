@@ -54,7 +54,7 @@
 
 
 
-@media screen and (max-width: 799px){
+@media screen and (max-width: 900px){
     .widgets{
         display: none;
     }

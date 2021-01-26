@@ -37,12 +37,10 @@
 
     .sidebarOption__inner h3{
         display: none;
-    }
-
-    .sidebarOption__inner h3{
         margin-left: 0;
     }
 
+    
     .sidebarOption__inner{
         border-radius: 50%;
         flex-grow: 0 !important;

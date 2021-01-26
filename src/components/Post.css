@@ -8,6 +8,7 @@
 .post:hover{
     background: #f7f7f7;
 }
+
 .post__verifyIcon{
     color: var(--twitter-color);
     font-size: 20px !important;
@@ -62,7 +63,7 @@
 }
 
 .post__image img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border: 1px solid #aaa;
     border-radius: 15px;

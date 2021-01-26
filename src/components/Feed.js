@@ -22,7 +22,7 @@ const Feed = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        db.collection('posts').add({
+        tweetInput && db.collection('posts').add({
             userName: "Buchi_Nigeria",
             text: tweetInput,
             image: image ? (window.URL || window.webkitURL).createObjectURL(image) : null,

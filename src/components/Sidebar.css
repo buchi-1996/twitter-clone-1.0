@@ -32,6 +32,8 @@
 
 .sidebar__tweetBtnIcon{
     background: var(--twitter-color) !important;
+    margin: 10px 0;
+    box-sizing: border-box !important;
 
 }
 
@@ -90,6 +92,13 @@
     .sidebar{
         align-items: flex-end;
         padding: 0 20px 0 0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sidebar{
+        align-items: center;
+        padding-right: 0;
     }
 }
 

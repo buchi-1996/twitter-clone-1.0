@@ -5,9 +5,9 @@
 
 .home__gridContainer{
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: 24% 1fr 30%;
     grid-template-rows: 1fr;
-    grid-template-areas: "sidebar main main widgets";
+    grid-template-areas: "sidebar main widgets";
 }
 
 .home__sidebar{
@@ -20,5 +20,13 @@
 
 .home__widgets{
     grid-area: widgets;
+}
+
+@media screen and (max-width: 900px){
+    .home__gridContainer{
+        grid-template-columns: 65px 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "sidebar main";
+    }
 }
 
